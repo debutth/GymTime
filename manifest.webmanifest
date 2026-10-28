@@ -1,0 +1,10 @@
+{
+  "name": "Tempo — Chronomètre de musculation",
+  "short_name": "Tempo",
+  "description": "Un chronomètre de musculation simple, avec tours et signal réglable.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "icons": [{"src":"icon-180.png","sizes":"180x180","type":"image/png","purpose":"any"}]
+}
