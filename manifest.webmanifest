@@ -1,6 +1,6 @@
 {
-  "name": "Tempo — Chronomètre de musculation",
-  "short_name": "Tempo",
+  "name": "GymTime — Chronomètre de musculation",
+  "short_name": "GymTime",
   "description": "Un chronomètre de musculation simple, avec tours et signal réglable.",
   "start_url": "./",
   "display": "standalone",
