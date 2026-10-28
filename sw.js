@@ -1,4 +1,4 @@
-const CACHE='gymtime-shell-v6';
+const CACHE='gymtime-shell-v7';
 const ASSETS=['./','./index.html','./style.css','./app.js','./manifest.webmanifest','./icon.svg','./icon-180.png','./gymtime-home-icon.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS))));
 self.addEventListener('activate',event=>event.waitUntil(self.clients.claim()));
