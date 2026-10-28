@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111111">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Tempo — Chronomètre</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">T</span><span>TEMPO</span></div>
+      <button class="icon-button" id="settings-open" aria-label="Options" title="Options">⚙</button>
+    </header>
+
+    <section class="timer-card" aria-label="Chronomètre">
+      <div class="total-label">TEMPS TOTAL</div>
+      <div class="total-time" id="total-time">00:00:00</div>
+      <div class="divider"></div>
+      <div class="lap-label">TOUR <span id="lap-number">01</span></div>
+      <div class="lap-time" id="lap-time">00:00</div>
+      <div class="alarm-chip" id="alarm-chip"><span class="alarm-dot"></span><span id="alarm-copy">Signal dans 02:30</span></div>
+    </section>
+
+    <section class="controls" aria-label="Commandes du chronomètre">
+      <button id="start-pause" class="button button-primary">Démarrer</button>
+      <button id="next-lap" class="button button-secondary" disabled>Tour suivant</button>
+      <button id="missed-lap" class="button button-quiet" disabled>Tour manqué</button>
+      <button id="reset" class="reset-button" disabled>Réinitialiser</button>
+    </section>
+
+    <section class="laps-section">
+      <div class="section-heading"><h2>Tours précédents</h2><span id="lap-count">0 tour</span></div>
+      <div id="empty-laps" class="empty-state">Tes tours terminés apparaîtront ici.</div>
+      <ol id="lap-list" class="lap-list" aria-live="polite"></ol>
+    </section>
+    <footer class="footer-note" id="status-note">Prêt quand tu l’es.</footer>
+  </main>
+
+  <dialog id="settings-dialog">
+    <form method="dialog" id="settings-form">
+      <div class="dialog-heading"><div><p class="eyebrow">PERSONNALISATION</p><h2>Options</h2></div><button class="icon-button close-button" aria-label="Fermer">×</button></div>
+      <label class="field-label" for="signal-minutes">Signal sonore après</label>
+      <div class="duration-field"><input id="signal-minutes" type="number" min="0" max="180" value="2"><span>min</span><input id="signal-seconds" type="number" min="0" max="59" value="30"><span>sec</span></div>
+      <p class="hint">Un seul signal par tour. Le délai repart à chaque nouveau tour.</p>
+      <label class="toggle-row"><span><strong>Son du signal</strong><small>Jouer un bip lorsque le délai est atteint</small></span><input id="sound-enabled" type="checkbox" checked><span class="toggle"></span></label>
+      <button class="button button-primary save-button" id="save-settings" value="save">Enregistrer</button>
+    </form>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
