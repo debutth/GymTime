@@ -1,4 +1,4 @@
-# Tempo — version installable via Safari
+# GymTime — version installable via Safari
 
 Ce dossier contient uniquement les fichiers nécessaires à l’application web. Il doit être publié sur une adresse HTTPS avant de pouvoir être ajouté à l’écran d’accueil de l’iPhone.
 
