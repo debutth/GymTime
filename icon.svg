@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180"><rect width="180" height="180" rx="42" fill="#e50914"/><path d="M54 44h72v19H76v19h43v19H76v35H54z" fill="#fff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <rect width="180" height="180" rx="42" fill="#111111"/>
+  <path d="M79 17h22v14H79zM75 23h30v8H75z" fill="#e50914"/>
+  <path d="M119 35l10-8 12 13-10 9" fill="#e50914"/>
+  <circle cx="90" cy="103" r="59" fill="#171717" stroke="#e50914" stroke-width="8"/>
+  <g fill="#f5f5f1" opacity=".85">
+    <circle cx="90" cy="51" r="2.5"/><circle cx="142" cy="103" r="2.5"/>
+    <circle cx="90" cy="155" r="2.5"/><circle cx="38" cy="103" r="2.5"/>
+  </g>
+  <g stroke="#f5f5f1" stroke-linecap="round" stroke-width="4">
+    <path d="M90 103L132 103"/>
+    <path d="M90 103L67 69" stroke="#e50914"/>
+  </g>
+  <g fill="#e50914">
+    <rect x="107" y="94" width="7" height="18" rx="2"/>
+    <rect x="129" y="85" width="9" height="36" rx="2"/>
+  </g>
+  <g transform="rotate(-34 90 103)" fill="#f5f5f1">
+    <rect x="107" y="94" width="7" height="18" rx="2"/>
+    <rect x="129" y="85" width="9" height="36" rx="2"/>
+  </g>
+  <circle cx="90" cy="103" r="7" fill="#f5f5f1" stroke="#111111" stroke-width="3"/>
+</svg>
